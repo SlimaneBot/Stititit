@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pretty Responsive Signup Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <h1>Sign-up</h1>
+            <hr>
+            <div class="box">
+                <form action="/Action for/index.html" target="_self" id="input-box">
+                    <input type="text" name="Full Name" id="full-name" placeholder="Enter Your Full Name"><br>
+                    <input type="text" name="User Name" id="user-name" placeholder="Enter a Username"><br>
+                    <input type="email" name="Email" id="email" placeholder="Enter your E-Mail"><br>
+                    <h3>Gender:</h3>
+                    <span class="gender-box">
+                        <input type="radio" id="male" name="Gender" value="Male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="Gender" value="Female">
+                        <label for="female">Female</label><br>
+                    </span>
+                    <!--End of span element-->
+                    <span class="bottom-section">
+                        <input type="password" name="password" id="password" minlength="8" maxlength="30"
+                            placeholder="Enter a Password" required><br>
+                        <input type="password" name="confirm password" id="confirm-password" minlength="8"
+                            maxlength="30" placeholder="confirm your Password" required><br>
+                    </span>
+                    <!--End of passwords section-->
+                    <div class="checking">
+                        <input type="checkbox" id="check-confident" name="check" required>
+                        <label for="check">I agree with<a href="#"> terms and conditions. </a></label><br>
+                        <input type="checkbox" id="check-age" name="check" required>
+                        <label for="check-age">I am 18+ years old.</label>
+                    </div>
+                     <button type="submit" id="submit">Submit</button>
+             </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

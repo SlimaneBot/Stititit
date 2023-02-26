@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    background-image: url(../Thumb/wave-haikei11.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 106vh;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+#navbar{
+    width: 100%;
+    height: 60px;
+    text-decoration: none;
+    list-style: none;
+}
+nav ul{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    gap: 166px;
+    margin: 20px 48px;
+    list-style: none;
+    flex-wrap: wrap;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    transition: 0.6s;
+}
+span .search-bar{
+    width: 500px;
+    height: 250px ;
+    background-color: black;
+}
+nav .logo{
+   position: absolute;
+   top: 10px;
+}
+.hum-menu{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: none;
+}
+a:hover{
+    text-decoration: underline;
+    transition: 0.6s;
+    border-radius: 12px;
+    padding: 2px 10px 2px 10px;
+    text-shadow: 2px 2px 3.1px #6096B4;
+    box-shadow:inset 2px 4px 10px 1px black;
+}
+p{
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+header{
+    text-align: center;
+}
+div .social-icons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    transition: all 0.5s ease-in-out;
+}
+header .full-image{
+    border-radius: 50%;
+}
+div .social-icons:hover{
+    flex-grow: 4;
+}
+.logo-fixed{
+  transition: none;
+}
+.logo-fixed:hover{
+  transition: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+@media  only screen and (max-width: 710px){
+    #navbar ul{
+    display:none;
+   }
+   body{
+    background-image: url(../Thumb/background-for-phone.svg);
+    height: 136vh;
+    width: 100vw;
+   }
+   .logo-fixed{
+     display: flex;
+     justify-content: center;
+   }
+   .hum-menu{
+    display: block;
+   }
+   div .social-icons{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+   }
+}
